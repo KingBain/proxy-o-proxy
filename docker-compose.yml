@@ -2,8 +2,6 @@ version: '3.8'
 
 services:
   side-leak-nginx:
-    image: ghcr.io/kingbain/side-leak-nginx:latest
+    image: ghcr.io/kingbain/proxy-o-proxy:latest
     ports:
       - "80:80"
-    environment:
-      API_KEY: ${API_KEY}
